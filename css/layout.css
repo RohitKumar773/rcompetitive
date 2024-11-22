@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(250, 251, 252);
+  scroll-behavior: smooth;
+}
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+header {
+  width: 100%;
+  height: 80px;
+  float: left;
+  background-color: white;
+  box-shadow: 2px 2px 4px lightgray;
+  position: fixed;
+  z-index: 10;
+}
+.logo_area {
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+.logo_area img {
+  height: 100%;
+  margin-left: 5%;
+}
+.menu_area {
+  width: calc(100% - 30%);
+  height: 100%;
+  float: left;
+}
+section {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: 80px;
+}
+
+#author {
+  width: 100%;
+  height: 300px;
+  float: left;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.author_img {
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+.author_img img {
+  width: 200px;
+  height: 300px;
+  object-position: center;
+  margin-left: 25%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.author_text {
+  width: calc(100% - 25%);
+  height: 100%;
+  float: left;
+}
+.text_title {
+  width: 100%;
+  height: 70px;
+  float: left;
+  font: 600 2rem "Roboto", sans-serif;
+  padding: 15px;
+  text-align: center;
+}
+.about_author {
+  width: 100%;
+  height: calc(100% - 70px);
+  float: left;
+  padding: 15px;
+  font: 1rem "Roboto", sans-serif;
+  text-align: justify;
+  line-height: 35px;
+}
+
+#about_area {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: 50px;
+}
+.content {
+  width: 100%;
+  height: calc(100% - 50px);
+  float: left;
+  font: 1rem "Roboto", sans-serif;
+  padding: 0 20px;
+  line-height: 38px;
+  text-align: justify;
+}
+#gallery {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+.img_area {
+  width: calc(100% - 20%);
+  height: calc(100% - 50px);
+  float: left;
+  margin-left: 10%;
+}
+.img_boxes {
+  width: 280px;
+  height: 320px;
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.img_boxes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#contact {
+  width: 90%;
+  height: 400px;
+  float: left;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 6px rgb(225, 225, 225);
+  margin-left: 5%;
+  border-radius: 10px;
+}
+.contact_details_box {
+  width: 50%;
+  height: 100%;
+  float: left;
+  /* background-color: gray; */
+}
+.contact_title {
+  width: 100%;
+  height: 100px;
+  float: left;
+  padding: 25px;
+  font: 1.4rem "Roboto", sans-serif;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+.contact_details_box p {
+  font: 1.1rem "Roboto", sans-serif;
+  margin: 30px 50px;
+}
+.contact_details_box iframe {
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+}
+footer {
+  width: 100%;
+  height: 150px;
+  float: left;
+  background-color: rgb(245, 245, 245);
+  margin-top: 80px;
+}
+.copyright {
+  width: 100%;
+  height: 70px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 1rem "Roboto", sans-serif;
+}
+.social_media_links {
+  width: 100%;
+  height: calc(100% - 70px);
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links_box {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-left: 10px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.links_box img {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  object-fit: cover;
+}
+
+/* media query start from here  */
+
+@media (max-width: 1000px) and (min-width: 0px) {
+  #author {
+    height: auto;
+    margin-top: 50px;
+  }
+  .author_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .author_img img {
+    margin: 0;
+  }
+  .author_text {
+    width: 100%;
+    height: auto;
+  }
+  .text_title {
+    height: auto;
+    font: 600 1.5rem "Roboto", sans-serif;
+  }
+  .copyright {
+    font: 0.9rem "Roboto", sans-serif;
+  }
+  .links_box {
+    width: 40px;
+    height: 40px;
+  }
+  .img_boxes {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  #contact {
+    height: auto;
+  }
+  .contact_details_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_details_box p {
+    margin: 15px 30px;
+  }
+  .contact_details_box iframe {
+    padding: 10px;
+    border-radius: 1rem;
+  }
+}

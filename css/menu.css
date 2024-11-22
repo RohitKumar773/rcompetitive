@@ -1,0 +1,53 @@
+.menu_area ul {
+  width: auto;
+  height: auto;
+  float: right;
+  padding: 20px;
+}
+.menu_area ul li {
+  float: left;
+  padding: 15px;
+  list-style: none;
+  font: 0.95rem "Roboto", sans-serif;
+}
+.menu_area ul li a {
+  text-decoration: none;
+  transition: 0.6s;
+  color: black;
+}
+#mobile_menu {
+  display: none;
+}
+
+.cool-link::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 1.5px;
+  background: rgb(23, 30, 87);
+  transition: width 0.6s;
+}
+.cool-link:hover::after {
+  width: 100%;
+}
+.menu_area ul li a:hover {
+  color: rgb(23, 30, 87);
+}
+.offcanvas-body p a {
+  text-decoration: none;
+  color: black;
+  font: 1rem sans-serif;
+}
+
+/* media query start from here  */
+
+@media (max-width: 750px) and (min-width: 0px) {
+  .menu_area ul li {
+    display: none;
+  }
+  #mobile_menu {
+    display: block;
+    /* padding: 10px; */
+    font-size: 22px;
+  }
+}
